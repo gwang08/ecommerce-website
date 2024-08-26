@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url('https://source.unsplash.com/1600x900/?abstract,background'); /* URL của hình nền */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* Nền trắng mờ để tăng độ tương phản */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Error Message Styles */
+.error-message {
+  display: none; /* Hidden by default */
+}
+
+.error-message .alert-danger {
+  display: block; /* Show the alert if it has alert-danger class */
+}
+
+/* Form Styles */
+.form-floating input {
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating label {
+  font-size: 1em;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #e60012;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  padding: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff6f61;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border-color: #e60012;
+  color: #e60012;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.btn-outline-dark:hover {
+  background-color: #e60012;
+  color: #fff;
+}
+
+/* Google Button Icon */
+.google-btn svg {
+  fill: #e60012;
+}
+
+.google-btn:hover svg {
+  fill: #fff;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Text Styles */
+.text-center h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #e60012; /* Màu chữ tiêu đề thành màu đỏ */
+}
+
+.text-center p {
+  font-size: 1.1em;
+}
+
+.text-center a {
+  color: #e60012; /* Màu chữ liên kết thành màu đỏ */
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  color: #ff6f61; /* Màu chữ liên kết khi hover */
+}
+
+/* Google Button Text */
+.google-btn {
+  color: #e60012; /* Màu chữ "Sign in with Google" thành màu đỏ */
+}
+
+/* Chỉnh sửa màu chữ cho liên kết "Sign up" */
+.link-primary {
+  color: #e60012; /* Màu chữ đỏ */
+}
+
+.link-primary:hover {
+  color: #ff6f61; /* Màu chữ đỏ nhạt hơn khi hover */
+}
+
+.g-recaptcha {
+  margin-bottom: 20px;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+}
+
+.g-recaptcha iframe {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  width: 340px;
+  height: 100px; /* Adjust the height to match the input fields */
+}
+
+.g-recaptcha iframe:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #86b7fe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 30px;
+  }
+
+  .btn-primary, .btn-outline-dark {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-center h2 {
+    font-size: 2em;
+  }
+
+  .text-center p {
+    font-size: 1em;
+  }
+}

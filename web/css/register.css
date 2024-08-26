@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url('https://source.unsplash.com/1600x900/?abstract,background'); /* URL of the background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Register Container */
+.register-container {
+  background: rgba(255, 255, 255, 0.9); /* White background with opacity for contrast */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+.form-floating input {
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating label {
+  font-size: 1em;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #e60012;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  padding: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff6f61;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border-color: #e60012;
+  color: #e60012;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.btn-outline-dark:hover {
+  background-color: #e60012;
+  color: #fff;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Text Styles */
+.text-center h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000; /* "Sign up" text color */
+}
+
+.text-center p {
+  font-size: 1.1em;
+}
+
+.text-center a {
+  color: #e60012;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px;
+  }
+
+  .btn-primary, .btn-outline-dark {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-center h2 {
+    font-size: 2em;
+  }
+
+  .text-center p {
+    font-size: 1em;
+  }
+}
